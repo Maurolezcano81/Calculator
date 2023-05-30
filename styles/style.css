@@ -1,0 +1,12 @@
+:root{
+    --fuentePrimaria: font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*  GLOBALES  */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
