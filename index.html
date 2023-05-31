@@ -22,41 +22,41 @@
 <body>
     <div class="contenedor">
         <div class="pantalla-contenedor">
-            <p class="" id="pantalla">TEXTO EJEMPLO</p>
+            <p class="" id="pantalla"></p>
         </div>
         <div class="fila1">
-            <button class="boton">(</button> 
-            <button class="boton">)</button>
-            <button class="boton">C</button>
-            <button class="boton">AC</button>
+            <button class="boton" value="(" id='parentesisA' onclick="modificarPantalla('parentesisA')">(</button> 
+            <button class="boton" value=")" id='parentesisB' onclick="modificarPantalla('parentesisB')">)</button>
+            <button class="boton" value='C' id='borrarUno' onclick="borrarUno()">C</button>
+            <button class="boton" id="borrarTodo" onclick="borrarTodo()">AC</button>
         </div>
 
         <div class="fila2">
-            <button class="boton">7</button> 
-            <button class="boton">8</button>
-            <button class="boton">9</button>
-            <button class="boton">*</button>
+            <button class="boton" value="7" id='7' onclick="modificarPantalla('7')">7</button> 
+            <button class="boton" value='8' id='8' onclick="modificarPantalla('8')">8</button>
+            <button class="boton" value='9' id='9' onclick="modificarPantalla('9')">9</button>
+            <button class="boton" value='*' id='multiplicar' onclick="modificarPantalla('multiplicar')">*</button>
         </div>
 
         <div class="fila3">
-            <button class="boton">4</button> 
-            <button class="boton">5</button>
-            <button class="boton">6</button>
-            <button class="boton">/</button>
+            <button class="boton" value='4' id='4' onclick="modificarPantalla('4')">4</button> 
+            <button class="boton" value='5' id='5' onclick="modificarPantalla('5')">5</button>
+            <button class="boton" value='6' id='6' onclick="modificarPantalla('6')">6</button>
+            <button class="boton" value='/' id='dividir' onclick="modificarPantalla('dividir')">/</button>
         </div>
 
         <div class="fila4">
-            <button class="boton">1</button> 
-            <button class="boton">2</button>
-            <button class="boton">3</button>
-            <button class="boton">-</button>
+            <button class="boton" value='1' id='1' onclick="modificarPantalla('1')">1</button> 
+            <button class="boton" value='2' id='2' onclick="modificarPantalla('2')">2</button>
+            <button class="boton" value='3' id='3' onclick="modificarPantalla('3')">3</button>
+            <button class="boton" value='-' id='restar' onclick="modificarPantalla('restar')">-</button>
         </div>
 
         <div class="fila5">
-            <button class="boton">0</button> 
-            <button class="boton">.</button>
-            <button class="boton">=</button>
-            <button class="boton">+</button>
+            <button class="boton" value='0' id='0' onclick="modificarPantalla('0')">0</button> 
+            <button class="boton" value='.' id='decimal' onclick="modificarPantalla('decimal')">.</button>
+            <button class="boton" value='=' id='resultado' onclick="mostrarResultado()">=</button>
+            <button class="boton" value='+' id='sumar' onclick="modificarPantalla('sumar')">+</button>
         </div>
     </div>
 </body>
