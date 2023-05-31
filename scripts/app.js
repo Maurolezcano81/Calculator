@@ -17,21 +17,17 @@ function borrarTodo(){
 
 function borrarUno(){
     let elementoPantalla = document.getElementById('pantalla');
-    textoPantalla = elementoPantalla.lenght;
-    console.log(textoPantalla.lenght)
-    let c = 0;
-    while (c <= textoPantalla.lenght){
-        
-        if (c >= textoPantalla.lenght){
-            textoPantalla = textoPantalla - c;
-        }
-        c++;
-    }
-    return textoPantalla;
+    textoPantalla = elementoPantalla.textContent;
+    textoBorrado = textoPantalla.slice(0, -1);
+    elementoPantalla.innerText = textoBorrado;
+    return textoBorrado;
 }
 
-
-
-function anadir(boton){
-    let escucharBoton = document.getElementById(boton);
+function mostrarResultado(){
+    let elementoPantalla = document.getElementById('pantalla');
+    let resultado = 0;
+    resultado = eval(elementoPantalla.textContent);
+    
+    return elementoPantalla.innerText = resultado;
 }
+

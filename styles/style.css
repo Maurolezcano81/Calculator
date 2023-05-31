@@ -23,13 +23,18 @@ h2 {
 }
 
 body{
-
+    font-family: var(--fuentePrimaria);
     background-image: url(../assets/background.png);
     background-size: fill;
     background-position: center;
     background-repeat: none;
 }
 
+.myName{
+    text-align: center;
+    font-family: var(--fuentePrimaria);
+    margin-top: 10rem;
+}
 .contenedor{
     width: 60rem;
     height:50rem;
@@ -45,13 +50,19 @@ body{
 }
 
 .pantalla-contenedor{
+    text-align: right;
     margin: 0 auto;
+    padding: 0.5rem 3rem;
     height: 10rem;
     width: 50rem;
     font-size: 4rem;
     border: 2px solid #7d7d7d;
     background-color: rgba(250, 250, 250, 0.3);
     border-radius: 2rem;
+}
+
+#pantalla{
+    margin: 3rem 1rem;
 }
 
 .boton{
@@ -62,5 +73,10 @@ body{
     border-style: none;
     margin: 0.5rem;
     background-color: rgba(250, 250, 250, 0.3);
+    border: 2px solid #7d7d7d;
+}
+
+.boton:hover{
+    background-color: rgba(31, 147, 241, 0.6);
     border: 2px solid #7d7d7d;
 }
